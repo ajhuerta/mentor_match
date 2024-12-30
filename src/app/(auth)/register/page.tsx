@@ -75,6 +75,7 @@ const Page: FC = () => {
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                 Sign up today
               </h1>
+              <p className="text-red-800">*Signing up through credentials is currently disabled. Please use Google to sign up</p>
               <form className="space-y-4 md:space-y-6" action="#" onSubmit={handleSignUp}>
                 <div>
                   <label
@@ -84,6 +85,7 @@ const Page: FC = () => {
                     Your email
                   </label>
                   <input
+                    disabled={true}
                     type="email"
                     name="email"
                     id="email"
@@ -101,6 +103,7 @@ const Page: FC = () => {
                     Password
                   </label>
                   <input
+                    disabled={true}
                     type="password"
                     name="password"
                     id="password"
@@ -118,6 +121,7 @@ const Page: FC = () => {
                     Confirm Password
                   </label>
                   <input
+                    disabled={true}
                     type="password"
                     name="password"
                     id="password"

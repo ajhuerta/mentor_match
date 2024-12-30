@@ -1,11 +1,24 @@
+// import { fetchRedis } from '@/helpers/redis'
 import { authOptions } from '@/lib/auth'
 import { getServerSession } from 'next-auth'
 import { notFound } from 'next/navigation'
+import { useState } from 'react'
 import SurveyForm from '../../../../components/SurveyForm'
+interface SurveyResponse {
+    status: string
+    college: string
+}
+
 
 const page = async ({}) => {
+
     const session = await getServerSession(authOptions)
     if(!session) notFound()
+    
+    // const [details, setDetails] = useState<SurveyResponse>({
+    //     status: "", // Mentor, Mentee, Both
+    //     college: "", // only wright is available at the moment
+    // })
 
     // ids of people who sent current logged in user a friend requests
     // const incomingSenderIds = (await fetchRedis('smembers', 

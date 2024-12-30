@@ -11,18 +11,18 @@ const Hero = ({
   listUser = [
     {
       name: "Users",
-      number: "35",
-      icon: "/assets/Icon/heroicons_sm-user.svg",
+      number: "100",
+      icon: "/assets/Icon/user.svg",
     },
     {
-      name: "Locations",
-      number: "",
-      icon: "/assets/Icon/gridicons_location.svg",
+      name: "States",
+      number: "4",
+      icon: "/assets/Icon/location.svg",
     },
     {
-      name: "Server",
-      number: "50",
-      icon: "/assets/Icon/bx_bxs-server.svg",
+      name: "Universities",
+      number: "5",
+      icon: "/assets/Icon/university.svg",
     },
   ],
 }) => {
@@ -42,7 +42,7 @@ const Hero = ({
                 Looking to learn, teach, or connect with people in your field?
               </h1>
               <p className="text-black-500 mt-4 mb-6">
-              Looking to learn, teach, or connect with people in your industry? Try out <strong>MentorMatch.</strong>
+              Try out <strong>MentorMatch.</strong> Today
               </p>
               <ButtonPrimary>Get Started</ButtonPrimary>
             </div>
@@ -60,6 +60,7 @@ const Hero = ({
             </div>
           </motion.div>
       </ScrollAnimationWrapper>
+      <p className="text-2xl">MentorMatch is spread across...</p>
       <div className="relative w-full flex">
         <ScrollAnimationWrapper
           className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">

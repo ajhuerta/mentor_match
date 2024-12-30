@@ -12,7 +12,7 @@ export default async function Home() {
     <Header/>
     <Hero />
     <Feature />
-    <Pricing />
+    {/* <Pricing /> */}
     {/* <Testimoni/> */}
     <Footer/>
     </>

@@ -25,8 +25,13 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
+            <Link href={"/"}>
+            <span>
             <Image src="/assets/Logo.svg" alt="" height={80} width={80} />
             <p>MentorMatch</p>
+            </span>
+
+            </Link>
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll
@@ -99,12 +104,12 @@ const Header = () => {
                   : " text-black-500 hover:text-teal-400 ")
               }
             >
-              Testimonial
+              Testimonials
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <Link href="/login">
-              <div className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-teal-400 transition-all">
+            <Link className="pr-2" href="/login">
+              <div className="font-medium tracking-wide py-2 px-5 sm:px-8 border border-black text-black bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-black hover:text-white transition-all">
                 Log in
               </div>
             </Link>

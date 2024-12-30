@@ -60,6 +60,7 @@ const Page: FC = () => {
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                 Log in to continue
               </h1>
+              <p className="text-red-800">*Logging in through credentials is currently disabled. Please use Google to login</p>
               <form className="space-y-4 md:space-y-6" action="#">
                 <div>
                   <label
@@ -69,6 +70,7 @@ const Page: FC = () => {
                     Your email
                   </label>
                   <input
+                    disabled={true}
                     type="email"
                     name="email"
                     id="email"
@@ -85,6 +87,7 @@ const Page: FC = () => {
                     Password
                   </label>
                   <input
+                    disabled={true}
                     type="password"
                     name="password"
                     id="password"
@@ -186,7 +189,7 @@ const Page: FC = () => {
                 )}
                 Google
               </Button>
-              <Button
+              {/* <Button
                 isLoading={isLoading}
                 type="button"
                 className="max-w-sm mx-auto w-full"
@@ -198,7 +201,7 @@ const Page: FC = () => {
                   </svg>
                 )}
                 Linkedin
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

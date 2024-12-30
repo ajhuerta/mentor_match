@@ -6,10 +6,9 @@ import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 
 const features = [
-  "Powerfull online protection.",
-  "Internet without borders.",
-  "Supercharged VPN",
-  "No specific time limits."
+  "Real time chatting with students / professionals.",
+  "Matching based on interests and career goals.",
+  "A vetted social networking platform",
 ]
 
 const Feature = () => {
@@ -37,7 +36,7 @@ const Feature = () => {
 
         <motion.div className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12" variants={scrollAnimation}>
           <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-            We Provide Many Features You Can Use
+            We Provide Many Features On The MentorMatch Platform
           </h3>
           <p className="my-2 text-black-500">
             You can explore the features that we provide with fun and have their
